@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Camera Bridge",
+    "description": "Microphone as ears, camera as eyes: speech is transcribed locally by SenseVoice into the session, frames are labelled by YOLO, and the model looks at a snapshot when labels are not enough. Replies are spoken by the read-aloud bridge."
+  }
+}

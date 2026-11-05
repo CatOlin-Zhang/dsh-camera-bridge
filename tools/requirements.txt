@@ -1,0 +1,16 @@
+# 摄像头桥 · Python 依赖
+#
+# 装法（用你 DSH 面板里填的那个 python）：
+#   <python> -m pip install -r tools/requirements.txt
+#
+# 只想听、不看画面：可以不装 ultralytics（省一大坨 torch）。
+#   但「眼睛」相关功能（camera_state / look_camera 的自动识别 / 盯着看）会不可用，
+#   手动拍快照 + 你自己看图仍然能工作。
+
+# —— 听（转写）——
+sherpa-onnx>=1.10
+numpy>=1.24
+
+# —— 看（YOLO-World 开放词表）——
+# ⚠ ultralytics 是 AGPL-3.0，详见仓库根目录 THIRD-PARTY-NOTICES.md
+ultralytics>=8.1

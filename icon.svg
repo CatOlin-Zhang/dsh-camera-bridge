@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Camera Bridge">
+  <rect x="4" y="14" width="40" height="30" rx="6" fill="#2b7fd4"/>
+  <rect x="8" y="18" width="32" height="22" rx="3" fill="#dff1ff"/>
+  <circle cx="24" cy="29" r="7" fill="#2b7fd4"/>
+  <circle cx="24" cy="29" r="3" fill="#fff"/>
+  <path d="M44 24l14-7v26l-14-7z" fill="#1f5fa0"/>
+  <path d="M14 52c6-4 14-4 20 0" stroke="#f2a33c" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M18 58c3-2 8-2 11 0" stroke="#f2a33c" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

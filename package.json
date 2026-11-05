@@ -1,0 +1,60 @@
+{
+  "name": "dsh-camera-bridge",
+  "version": "0.9.0-beta.1",
+  "description": "摄像头桥：把摄像头和麦克风接进 DSH 会话 —— 说话经本地 SenseVoice 转成文字，画面交给 YOLO 认，模型拿不准时自己看一眼快照；做饭、看猫这类场景作为模块挂在视觉下面。",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  },
+  "author": "阿根达斯 <2315916438@qq.com>",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "camera",
+    "webcam",
+    "rtsp",
+    "vision",
+    "yolo",
+    "asr",
+    "sensevoice"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "beta"
+  }
+}
