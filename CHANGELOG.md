@@ -49,6 +49,20 @@
 - 评估过改用 ONNX Runtime 以保留 MIT，**但实测发现 YOLO-World 导出 ONNX 后词表被烘焙进模型，
   会失去开放词表**（详见 `THIRD-PARTY-NOTICES.md` 第三节），与核心体验冲突，故放弃。
 
+### 文档
+
+- README 重写：封面横幅、按「是什么 / 需要什么 / 装法 / 怎么用 / 常见问题 / 兼容性 / 隐私 / 许可」重组
+- 新增 **「引用与致谢」**：注明默认对接朗读桥（dsh-tts-bridge，作者 Yuuyuko-uu）及其许可要求
+- 新增 **「换掉朗读桥」**：说明朗读服务只需 `/status` + `/stop` 两个接口，以及如何换成别的本地 TTS
+- 新增 `docs/cover.png` 封面图
+- 图标换成与封面同一套配色
+- 补 `repository` / `homepage` / `bugs`，README 顶部加 issue 链接
+
+### 新增配置
+
+- `ttsBase`（默认 `/dsh-tts-bridge`）：朗读服务的地址。可填同源路径或完整 URL；
+  留空 = 不接朗读服务（不做半双工、也不抢话，其余功能照常）
+
 ### 已知问题
 
 - 界面只有中文

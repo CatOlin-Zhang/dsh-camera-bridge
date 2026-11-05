@@ -1,9 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Camera Bridge">
-  <rect x="4" y="14" width="40" height="30" rx="6" fill="#2b7fd4"/>
-  <rect x="8" y="18" width="32" height="22" rx="3" fill="#dff1ff"/>
-  <circle cx="24" cy="29" r="7" fill="#2b7fd4"/>
-  <circle cx="24" cy="29" r="3" fill="#fff"/>
-  <path d="M44 24l14-7v26l-14-7z" fill="#1f5fa0"/>
-  <path d="M14 52c6-4 14-4 20 0" stroke="#f2a33c" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M18 58c3-2 8-2 11 0" stroke="#f2a33c" stroke-width="3" fill="none" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="摄像头桥">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1f3a"/>
+      <stop offset="1" stop-color="#3a1c4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)"/>
+
+  <!-- 取景器 -->
+  <rect x="24" y="15" width="16" height="9" rx="3" fill="none" stroke="#a5b0ff" stroke-width="3"/>
+  <!-- 机身 -->
+  <rect x="11" y="21" width="42" height="28" rx="7" fill="none" stroke="#a5b0ff" stroke-width="3"/>
+  <!-- 镜头 -->
+  <circle cx="32" cy="35" r="9" fill="none" stroke="#a5b0ff" stroke-width="3"/>
+  <circle cx="32" cy="35" r="4" fill="none" stroke="#6fd0ff" stroke-width="2.5"/>
+  <!-- 指示灯 -->
+  <circle cx="46.5" cy="27" r="2.4" fill="#ffb45a"/>
 </svg>

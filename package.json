@@ -16,6 +16,7 @@
     "lib",
     "tools",
     "locale",
+    "docs",
     "icon.svg",
     "cordis.patch.yml",
     "README.md",
@@ -38,7 +39,15 @@
       ]
     }
   },
-  "author": "阿根达斯 <2315916438@qq.com>",
+  "author": "阿根达斯 <2315916438@qq.com> (https://github.com/CatOlin-Zhang)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatOlin-Zhang/dsh-camera-bridge.git"
+  },
+  "homepage": "https://github.com/CatOlin-Zhang/dsh-camera-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/CatOlin-Zhang/dsh-camera-bridge/issues"
+  },
   "keywords": [
     "deepseek-harness",
     "dsh-plugin",
