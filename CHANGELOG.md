@@ -58,6 +58,15 @@
 - 图标换成与封面同一套配色
 - 补 `repository` / `homepage` / `bugs`，README 顶部加 issue 链接
 
+### 重构
+
+- **把「做饭」拆成独立模块** `lib/modules/cook.js`：
+  - 宿主只负责装配（工具 / 路由 / 视觉订阅 / 提示词），**不认识具体业务**
+  - 新增配置 `modules`（逗号分隔，默认 `cook`）：**空 = 一个都不挂**，此时只保留
+    `look_camera` / `camera_state` 两个本体工具，提示词也少一段
+  - 模块自带 `工具 / 路由 / 接上视觉 / 上下文`，以后加「盯着猫」不用改宿主
+- 提示词注入名从 `camera-state` 改为 `camera-state-<模块 id>`，多模块互不覆盖
+
 ### 新增配置
 
 - `ttsBase`（默认 `/dsh-tts-bridge`）：朗读服务的地址。可填同源路径或完整 URL；
