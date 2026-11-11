@@ -1,6 +1,6 @@
 {
   "name": "dsh-camera-bridge",
-  "version": "0.9.0-beta.1",
+  "version": "0.9.0-beta.2",
   "description": "摄像头桥：把摄像头和麦克风接进 DSH 会话 —— 说话经本地 SenseVoice 转成文字，画面交给 YOLO 认，模型拿不准时自己看一眼快照；做饭、看猫这类场景作为模块挂在视觉下面。",
   "license": "AGPL-3.0-or-later",
   "type": "module",
@@ -59,6 +59,9 @@
     "asr",
     "sensevoice"
   ],
+  "scripts": {
+    "test": "node --test test"
+  },
   "engines": {
     "node": ">=18"
   },
